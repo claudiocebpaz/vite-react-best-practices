@@ -15,7 +15,7 @@ As of November 2026 the ecosystem has moved substantially:
 | React | 19.x generic | 19.3.1 (19.3: View Transitions, Fragment Refs, browser(), Trusted Types) |
 | Vite | 5/6 era | 8.3.5 (Vite 8 since Mar 2026, Rolldown-based) |
 | React Router | v7 implicit | 8.5.1 (lazy route discovery, granular `route.lazy`) |
-| TanStack Query | v5 | v6 (Mar 2026: `queryOptions`, `gcTime`, `useSuspenseQuery`, `placeholderData`) |
+| TanStack Query | v5 | v5.105.1 (no v6 for React exists; verified on npm) |
 
 A comparison with `vercel-labs/agent-skills` (`react-best-practices`) showed the two
 skills are complementary: Vercel covers React/Next.js performance (RSC, server actions);
@@ -35,7 +35,7 @@ references, and a `CLAUDE.md` symlink to `AGENTS.md`.
 
 ## Baseline (shared by every subagent)
 
-- Target stack: React 19.3 + Vite 8.3 (Rolldown) + React Router 8.5 + TanStack Query v6 +
+- Target stack: React 19.3 + Vite 8.3 (Rolldown) + React Router 8.5 + TanStack Query v5 +
   strict TypeScript.
 - Preserve each file's H1 and overall format: short intro, "Why it matters",
   Incorrect / Correct code examples in fenced blocks with language tags, English, no emojis.
@@ -80,7 +80,7 @@ Files: `react-route-splitting.md`, `react-server-state.md`, `react-memoization.m
 
 - **react-route-splitting**: React Router 8 `route.lazy` (object-based granular lazy),
   lazy route discovery; keep `React.lazy` + `Suspense` for non-framework usage.
-- **react-server-state**: TanStack Query v6 (`queryOptions`, `useSuspenseQuery`,
+- **react-server-state**: TanStack Query v5 (`queryOptions`, `useSuspenseQuery`,
   `placeholderData` replacing `keepPreviousData`, `gcTime`); demote SWR to a brief mention.
 - **react-memoization**: add React Compiler (v1+) auto-memoization; explain when manual
   `useMemo`/`useCallback` still matters (compiler not enabled, external consumers, effect
@@ -103,7 +103,7 @@ Files: `react-colocation.md`, `anti-import-dist.md`, `vite-troubleshooting.md`.
 
 - Regenerate `AGENTS.md` mirroring all 11 updated rules (same sections, expanded content).
 - `SKILL.md`: version `2.0.0`, description mentions React 19 / Vite 8 / React Router 8 /
-  TanStack Query v6, add priority table (CRITICAL/HIGH/MEDIUM) and a "How to Use" section.
+  TanStack Query v5, add priority table (CRITICAL/HIGH/MEDIUM) and a "How to Use" section.
 - `metadata.json`: version `2.0.0`, date `November 2026`, updated abstract and references.
 - `marketplace.json`: updated description and tags.
 - `README.md`: updated category list, stack versions, contribution note.

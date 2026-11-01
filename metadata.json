@@ -1,10 +1,13 @@
 {
-  "version": "1.1.0",
+  "version": "2.0.0",
   "organization": "ant-gravity",
-  "date": "January 2026",
-  "abstract": "Comprehensive React and Vite SPA performance, architecture, and deployment guidelines. This skill should be used when building, reviewing, or refactoring React applications built with Vite (SPA). Covers Vite-specific build configurations, static hosting requirements, and core React performance patterns.",
+  "date": "November 2026",
+  "abstract": "Comprehensive React and Vite SPA performance, architecture, and deployment guidelines covering 11 rules across 3 categories. This skill should be used when building, reviewing, or refactoring React applications built with Vite (SPA). Targets React 19, Vite 8, React Router 8, and TanStack Query v5: Vite static hosting and caching requirements, build validation, environment variables, route-level code splitting, server state, memoization with React Compiler, image optimization, colocation, and troubleshooting.",
   "references": [
     "https://react.dev",
-    "https://vitejs.dev"
+    "https://vite.dev",
+    "https://reactrouter.com",
+    "https://tanstack.com/query",
+    "https://react.dev/learn/react-compiler"
   ]
 }

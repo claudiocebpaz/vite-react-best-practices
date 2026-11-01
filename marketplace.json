@@ -2,11 +2,11 @@
   "skills": [
     {
       "name": "vite-react-best-practices",
-      "description": "Comprehensive React and Vite SPA performance, architecture, and deployment guidelines. Use this skill when building, reviewing, or refactoring React applications built with Vite (SPA). Covers Vite-specific build configurations, static hosting requirements, and core React performance patterns.",
+      "description": "Comprehensive React 19 and Vite 8 SPA performance, architecture, and deployment guidelines. Use this skill when building, reviewing, or refactoring React applications built with Vite (SPA). Covers Vite 8 build and static hosting requirements, React Router 8 route-level code splitting, TanStack Query v5 server state, React Compiler memoization, and core React performance patterns.",
       "category": "Web Development",
       "author": "ant-gravity",
       "license": "MIT",
-      "tags": ["react", "vite", "performance", "best-practices"],
+      "tags": ["react", "react-19", "vite", "vite-8", "react-router", "tanstack-query", "compiler", "performance", "spa", "best-practices"],
       "installation": "npx skills add claudiocebpaz/vite-react-best-practices"
     }
   ],
